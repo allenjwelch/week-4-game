@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box; 
+}
+
+.gemImgs {
+  height: 100px;
+  width: 100px;
+}
+
+#gems {
+  display: block; 
+  border: 1px solid black; 
+
+  margin: auto; 
+}
