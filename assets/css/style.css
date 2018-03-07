@@ -2,14 +2,131 @@
   box-sizing: border-box; 
 }
 
+body {
+  background-image: url('../images/congruent_outline.png'); 
+}
+
+html {
+  position: relative; 
+  top: 0; 
+  left: 0; 
+}
+
 .gemImgs {
   height: 100px;
   width: 100px;
 }
 
-#gems {
-  display: block; 
-  border: 1px solid black; 
-
-  margin: auto; 
+img {
+  display: inline-block; 
 }
+
+#gems {
+  text-align: center;
+  margin: 20px; 
+}
+
+#audio {
+  display: none; 
+}
+
+#title h1 {
+  text-align: center; 
+  font-family: 'Chelsea Market', cursive;
+  font-size: 50px; 
+  font-style: italic; 
+  color: rgb(173, 186, 223); 
+}
+
+#title p {
+  font-size: 15px; 
+  color: rgb(123, 182, 177); 
+}
+
+#display h2, p {
+  text-align: center; 
+  font-family: 'Chelsea Market', cursive;
+  color: rgb(173, 186, 223); 
+}
+
+p {
+  font-size: 20px; 
+  color: rgb(111, 134, 196); 
+}
+
+#win {
+  position: absolute; 
+  bottom: 0; 
+  left:5%; 
+  padding: 5px; 
+  opacity: 0; 
+  font-family: 'Righteous', cursive;
+  color: rgb(104, 213, 233); 
+}
+
+#win h1 {
+  font-size: 60px; 
+}
+
+#lose {
+  position: absolute; 
+  bottom: 0; 
+  right:3%; 
+  padding: 5px; 
+  opacity: 0; 
+  font-family: 'Righteous', cursive;
+  color: rgb(196, 76, 76); 
+  font-size: 80px; 
+}
+
+#lose h1 {
+  font-size: 60px; 
+}
+
+@media screen and (min-width: 980px) {
+  .gemImgs {
+    height: 200px;
+    width: 200px;
+    float: right; 
+  }
+
+  #gems {
+    height: 300px;
+    float: right; 
+
+  }
+
+  #title h1 {
+   font-size: 80px; 
+  }
+
+  #title p {
+    font-size: 20px;
+  }
+
+  #win {
+    left:25%; 
+  }
+
+  #win h1 {
+    font-size: 80px; 
+  }
+
+  #lose h1 {
+    font-size: 80px; 
+  }
+
+  #display h2, p {
+    text-align: center; 
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(173, 186, 223); 
+  }
+
+  p {
+    font-size: 25px; 
+    color: rgb(111, 134, 196); 
+  }
+
+}
+/* font-family: 'Righteous', cursive;
+font-family: 'Chelsea Market', cursive; */

@@ -7,16 +7,25 @@
   <title>Crystal Game</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Righteous" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+
   
 </head>
 <body>
-  <header></header>  
-  
-  <main>
+  <header>
     
+  </header>  
+   
+  <main>
+    <div id="title">
+      <h1>Crystal Game</h1>
+      <p>Each crystal has a unique value. Click a crystal to add to your number. Reach the number shown to win the game.</p>
+      
+    </div>
     
     <div id = "gems">
       <img id = "orangeGem" class = "gemImgs" src="assets/images/orangeCrystal.png" alt="orange crystal">
@@ -27,16 +36,25 @@
     
     <div id="display">
       <h2>Number to reach: </h2>
-      <p id="goalNumberDisplay"></p>
+      <p id="goalNumberDisplay">--</p>
       <h2>Your Number: </h2>
-      <p id="gemCounterDisplay"></p>
+      <p id="gemCounterDisplay">--</p>
       <h2>Score: </h2>
-      <p id="userScoreDisplay"></p>
+      <p id="userScoreDisplay">0</p>
     </div>
     
-    
+    <div id ="win">
+      <h1>Nice!</h1>
+    </div>
+
+    <div id ="lose">
+      <h1>Try harder!</h1>
+    </div>
   </main>
   
+  <audio id="audio" controls preload="none"> 
+    <source src="assets/images/Clink.mp3" type="audio/mpeg">
+ </audio>
   
   <footer></footer>  
   
@@ -44,7 +62,8 @@
   
   
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
-<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
