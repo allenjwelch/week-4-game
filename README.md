@@ -4,6 +4,6 @@
 https://allenjwelch.github.io/week-4-game/
 
 
-Each Crstal has a unique value each round. 
+Each Crystal has a unique value each round. 
 Select the Crstals to add to your overall number. 
 Match the 'Number to Reach' to win. 
